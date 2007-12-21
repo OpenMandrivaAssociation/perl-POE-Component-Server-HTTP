@@ -17,6 +17,7 @@ BuildRequires:	perl-devel
 BuildRequires:  perl(POE::API::Peek)
 BuildRequires:  perl(YAML)
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 POE::Component::Server::HTTP (PoCo::HTTPD) is a framework for building custom 
