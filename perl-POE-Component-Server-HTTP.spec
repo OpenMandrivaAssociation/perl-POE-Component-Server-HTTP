@@ -8,7 +8,7 @@ Release:	4
 Summary:	Poe Component to write HTTP server
 License:	Artistic and GPL+	
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl-devel
