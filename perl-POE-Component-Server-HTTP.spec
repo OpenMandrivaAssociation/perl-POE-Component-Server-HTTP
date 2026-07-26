@@ -1,15 +1,13 @@
 %define upstream_name	 POE-Component-Server-HTTP
-%define	upstream_version 0.09
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.09
+Release:	6
 
 Summary:	Poe Component to write HTTP server
 License:	Artistic and GPL+	
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/POE-Component-Server-HTTP
-Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/POE-Component-Server-HTTP-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/POE-Component-Server-HTTP-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ HTTP servers based on POE.
 It is loosely modeled on the ideas of apache and the mod_perl/Apache module.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -49,9 +47,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %changelog
 * Sat Aug 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.90.0-1mdv2010.0
 + Revision: 406181
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.09-4mdv2009.0
+- rebuild using %0.09 Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.09-4mdv2009.0
 + Revision: 241822
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
